@@ -1,0 +1,351 @@
+body {
+    margin: 0;
+    background-color: #232323;
+}
+section {
+    height: 100vh;
+    overflow-x: hidden;
+}
+.main {
+    position: relative;
+    background-image: url('../img/mainbg.jpg');
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 2s ease-in-out;
+}
+nav {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 100vw;
+    /* transition: margin 1s ease; */
+    z-index: 1000;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85vw;
+    margin: 60px auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav a {
+    text-decoration: none;
+    color: #dddddd;
+    margin: 0 10px;
+    font-size: 25px;
+    border-bottom: #00000000 1px dotted;
+    transition: all 0.3s ease-in-out;
+}
+.nav a:hover {
+    color: #ffffff !important;
+    border-bottom: white 1px solid;
+}
+.active {
+    color: #ffffff !important;
+    border-bottom: white 1px solid !important;
+}
+.main-desc {
+    color: #dddddd;
+    margin-left: 200px;
+    margin-top: 300px;
+}
+.main-desc h2 {
+    font-size: 40px;
+}
+.main-desc div {
+    font-size: 25px;
+}
+.location {
+    overflow: hidden;
+    position: relative;
+}
+.videobg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.area {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.area-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    color: #ffffff;
+}
+.area-desc h3 {
+    font-size: 30px;
+}
+.area-desc div {
+    font-size: 20px;
+}
+.area-img {
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.area-img-bg {
+    position: relative;
+    width: 450px;
+    height: 450px;
+}
+.area-0-img-bef {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 647px;
+    height: 447px;
+    border: #ffffff 3px solid;
+    z-index: 1;
+    transition: all 1s ease;
+}
+.area-0-img-img {
+    position: absolute;
+    background-image: url('../img/areas/0.png');
+    background-size: cover;
+    left: -200px;
+    width: 650px;
+    height: 450px;
+    z-index: 2;
+}
+.area-0-img-aft {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 647px;
+    height: 447px;
+    border: #ffffff 3px dashed;
+    z-index: 3;
+    transition: all 1s ease;
+}
+.area-1-img-bef {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 447px;
+    height: 447px;
+    border: #ffffff 3px solid;
+    z-index: 1;
+    transition: all 1s ease;
+}
+.area-1-img-img {
+    position: absolute;
+    background-image: url('../img/areas/Untitled-1.png');
+    background-size: cover;
+    width: 450px;
+    height: 450px;
+    z-index: 2;
+}
+.area-1-img-aft {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 447px;
+    height: 447px;
+    border: #ffffff 3px dashed;
+    border-radius: 50%;
+    z-index: 3;
+    transition: all 1s ease;
+}
+.area-2-img-bef {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 447px;
+    height: 447px;
+    border: #ffffff 3px solid;
+    z-index: 1;
+    transition: all 1s ease;
+}
+.area-2-img-img {
+    position: absolute;
+    background-image: url('../img/areas/Untitled-2.png');
+    background-size: cover;
+    width: 450px;
+    height: 450px;
+    z-index: 2;
+}
+.area-2-img-aft {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 447px;
+    height: 447px;
+    border: #ffffff 3px solid;
+    z-index: 3;
+    transition: all 1s ease;
+}
+.area-3-img-bef {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 447px;
+    height: 447px;
+    border: #ffffff 3px dashed;
+    z-index: 1;
+    transition: all 1s ease;
+}
+.area-3-img-img {
+    position: absolute;
+    background-image: url('../img/areas/Untitled-3.png');
+    background-size: cover;
+    width: 450px;
+    height: 450px;
+    z-index: 2;
+}
+.area-3-img-aft {
+    position: absolute;
+    border-radius: 50%;
+    top: 2px;
+    right: 2px;
+    width: 447px;
+    height: 447px;
+    border: #ffffff 3px solid;
+    z-index: 3;
+    transition: all 1s ease;
+}
+
+.transport {
+    position: relative;
+    background-image: url('../img/bike.jpg');
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    color: white;
+}
+.transport-about {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.transport-about h3 {
+    font-size: 30px;
+    margin-left: 700px;
+}
+.transport-about div {
+    font-size: 20px;
+    margin-left: 700px;
+}
+
+.appereance-block {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    color: white;
+}
+.app-info {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.app-info h3 {
+    font-size: 30px;
+}
+.app-info div {
+    font-size: 20px;
+}
+.app-img {
+    display: flex;
+    position: relative;
+    width: 60%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.app-img-bg {
+    background-image: url('../img/app.jpg');
+    background-size: cover;
+    width: 700px;
+    height: 500px;
+}
+.values-block {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    color: white;
+}
+.val-info {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.val-info h3 {
+    font-size: 30px;
+}
+.val-info div {
+    font-size: 20px;
+}
+.val-img {
+    display: flex;
+    position: relative;
+    width: 60%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.val-img-bg {
+    background-image: url('../img/values.png');
+    background-size: cover;
+    width: 700px;
+    height: 500px;
+}
+
+
+.apartments {
+    position: relative;
+    background-image: url('../img/mac.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    color: white;
+}
+.apartments-about {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.apartments-about h3 {
+    font-size: 30px;
+    margin-right: 600px;
+}
+.apartments-about div {
+    font-size: 20px;
+    margin-right: 600px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.autors {
+    font-size: 30px;
+    color: white;
+}
+.autors a {
+    text-decoration: none;
+    color: white;
+}
+.autors a:hover {
+    color: #dda058;
+}

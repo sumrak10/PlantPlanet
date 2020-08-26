@@ -30,7 +30,7 @@ nav {
     width: 100vw;
     /* transition: margin 1s ease; */
     z-index: 100;
-    backdrop-filter: blur(15px) brightness(0.7);
+    /* backdrop-filter: blur(15px) brightness(0.7); */
 }
 .nav {
     display: flex;
@@ -60,7 +60,7 @@ nav {
     position: absolute;
     color: #dddddd;
     margin-left: 200px;
-    margin-top: 300px;
+    margin-top: 200px;
     z-index: 3;
 }
 .main-desc h2 {
@@ -126,6 +126,7 @@ nav {
     position: absolute;
     background-image: url('../img/areas/0.png');
     background-size: cover;
+    background-position: center;
     left: -200px;
     width: 650px;
     height: 450px;
@@ -228,12 +229,34 @@ nav {
     transition: all 1s ease;
 }
 
-.transport {
+.bus {
     position: relative;
-    background-image: url('../img/bike.jpg');
+    background-image: url('../img/Bus.png');
     background-size: 140%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
+    display: flex;
+    color: white;
+}
+.bus-about {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.bus-about h3 {
+    font-size: 30px;
+    margin-left: 700px;
+}
+.bus-about div {
+    font-size: 20px;
+    margin-left: 700px;
+}
+.transport {
+    position: relative;
+    background-image: url('../img/Bicycle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
     display: flex;
     color: white;
 }
@@ -244,11 +267,11 @@ nav {
 }
 .transport-about h3 {
     font-size: 30px;
-    margin-left: 700px;
+    margin-right: 700px;
 }
 .transport-about div {
     font-size: 20px;
-    margin-left: 700px;
+    margin-right: 700px;
 }
 
 .appereance-block {
@@ -281,7 +304,7 @@ nav {
     justify-content: center;
 }
 .app-img-bg {
-    background-image: url('../img/app.jpg');
+    background-image: url('../img/city.png');
     background-size: cover;
     width: 700px;
     height: 500px;
@@ -349,7 +372,15 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+}
+.about-img {
+    background-image: url('../img/we.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 70vh;
 }
 .autors {
     font-size: 30px;

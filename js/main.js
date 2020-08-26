@@ -17,9 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
         if ( pageYOffset >= 35 ) {
             document.getElementsByTagName('nav')[0].style.position = "fixed";
             document.getElementsByTagName('nav')[0].style.margin = "-40px auto";
+            document.getElementsByTagName('nav')[0].style.backdropFilter = "blur(15px) brightness(0.7)"
         } else {
             document.getElementsByTagName('nav')[0].style.position = "absolute";
             document.getElementsByTagName('nav')[0].style.margin = "0px auto";
+            document.getElementsByTagName('nav')[0].style.backdropFilter = ""
         }
 
         if ( pageYOffset >= 0) {

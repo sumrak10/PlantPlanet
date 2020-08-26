@@ -10,6 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener('scroll', function() {
         // console.log(pageYOffset)
         
+        if ( pageYOffset <= windowH ) {
+            document.getElementsByClassName('main-filter')[0].style.filter = "opacity("+(pageYOffset/10)+"%)"
+        }
+
         if ( pageYOffset >= 35 ) {
             document.getElementsByTagName('nav')[0].style.position = "fixed";
             document.getElementsByTagName('nav')[0].style.margin = "-40px auto";
